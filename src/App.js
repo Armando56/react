@@ -20,6 +20,11 @@ class App extends Component {
       showCars: !this.state.showCars
     })
   }
+  // toggleCarsHandler = () => {
+  //   this.setState({
+  //     showCars: !this.state.showCars
+  //   })
+  // }
 
   onChangeName(name, index) {
     const car = this.state.cars[index]
