@@ -20,11 +20,6 @@ class App extends Component {
       showCars: !this.state.showCars
     })
   }
-  // toggleCarsHandler = () => {
-  //   this.setState({
-  //     showCars: !this.state.showCars
-  //   })
-  // }
 
   onChangeName(name, index) {
     const car = this.state.cars[index]
@@ -80,8 +75,13 @@ class App extends Component {
         <button onClick={this.changeTextHandler.bind(this, 'Kruto!!! Rabotaet')}
         >Change text</button>
 
-        {cars}
-
+        <div style={{
+          width: 400,
+          margin: 'auto',
+          paddingTop: '20px'
+        }}>
+          {cars}
+        </div>
       </div>
     );
   }
